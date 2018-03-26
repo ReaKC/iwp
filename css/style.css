@@ -9,18 +9,33 @@
 	position: relative;
 	border-radius: 9px;
 	padding: 0px;
+	
+	width: 1000px;
+			margin: 0 auto;
 }	
 
 body
 {
 	background-color: #CCCCCC;
+	
+
 }	
 
 
 
-.jumbotron.a
+.jumbotron-fluid
 {
 	padding: 30px;
 	background-color: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
 }		
 
+ #gradient1 {
+     height: 36px;
+     background: #990000;
+    /* For browsers that do not support gradients */
+     background: linear-gradient(to bottom, #6E6E6E, #323232);
+    /* Standard syntax (must be last) */
+}
+
+		
