@@ -1,0 +1,23 @@
+/* Your custom styles */
+
+
+.container
+{
+    background-color: #EEEEEE;
+	width: 80%;
+	top: 30px;
+	position: relative;
+	border-radius: 9px;
+	padding: 0px;
+}	
+
+body
+{
+	background-color: #CCCCCC;
+}	
+
+.container-fluid
+{
+	background-color: #FFFFFF;
+	
+}	
