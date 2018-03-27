@@ -561,6 +561,9 @@ pre code {
   margin-left: auto;
 }
 
+
+
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -570,6 +573,7 @@ pre code {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+    background-color: red;
   }
 }
 

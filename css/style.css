@@ -1,24 +1,27 @@
 /* Your custom styles */
 
 
+
+
+
 .container
 {
     background-color: #EEEEEE;
 	width: 80%;
 	top: 30px;
+	bottom: 30px;
 	position: relative;
 	border-radius: 9px;
 	padding: 0px;
 	
 	width: 1000px;
+
 			margin: 0 auto;
 }	
 
 body
 {
 	background-color: #CCCCCC;
-	
-
 }	
 
 
@@ -36,6 +39,48 @@ body
     /* For browsers that do not support gradients */
      background: linear-gradient(to bottom, #6E6E6E, #323232);
     /* Standard syntax (must be last) */
+}
+
+
+
+
+
+
+ ul {
+     margin-left: 0;
+     padding-left: 10px;
+     list-style-type: square;
+}
+ ul.a {
+    list-style-type: circle;
+}
+ ul.b {
+    list-style-type: square;
+}
+ ol.c {
+    list-style-type: upper-roman;
+}
+ ol.d {
+    list-style-type: lower-alpha;
+}
+
+ul{
+     list-style: none;
+     padding: 0px;
+     text-align: left;
+     background-color: transparent;
+}
+a{
+     color: black;
+     padding: 0px;
+     text-decoration: none;
+     background-color: transparent;
+     color: white;
+}
+li{
+     display: inline-block;
+     margin-left: 12px;
+     background-color: transparent;
 }
 
 		
