@@ -1,7 +1,11 @@
 /* Your custom styles */
 
 
-
+body
+{
+	background-color: #CCCCCC;
+	
+}	
 
 
 .container
@@ -16,13 +20,10 @@
 	
 	width: 1000px;
 
-			margin: 0 auto;
+	margin: 0 auto;
 }	
 
-body
-{
-	background-color: #CCCCCC;
-}	
+
 
 
 
@@ -46,11 +47,7 @@ body
 
 
 
- ul {
-     margin-left: 0;
-     padding-left: 10px;
-     list-style-type: square;
-}
+
  ul.a {
     list-style-type: circle;
 }
@@ -68,7 +65,7 @@ ul{
      list-style: none;
      padding: 0px;
      text-align: left;
-     background-color: transparent;
+     margin-top:  auto;
 }
 a{
      color: black;
@@ -77,10 +74,27 @@ a{
      background-color: transparent;
      color: white;
 }
+a:hover
+{
+     font-weight: bold;
+     color: white;  
+}
+
+
 li{
      display: inline-block;
      margin-left: 12px;
      background-color: transparent;
 }
+
+#kerah
+{
+      background-color: transparent;
+      padding: 20px;
+}
+ 
+ 
+    
+
 
 		

@@ -17,7 +17,23 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    
+ 
 <style>
+
+body
+{
+	overflow-x:hidden;
+	max-width: 100%;
+}	
+html
+{
+    overflow-x:hidden;
+	max-width: 100%;
+}
+
+
+/*for mobile screens:*/
 @media (max-width: 576px)
  {
   .container 
@@ -34,6 +50,16 @@
     /* Standard syntax (must be last) */
    }
 }
+
+/*for full desktop screens:*/
+@media (min-width: 1400px)
+{
+    @media (min-width: 1500px) {
+  .container {
+    min-width: 1400px;
+  }
+}
+}
 </style>
 </head>
 
@@ -48,11 +74,11 @@
 
             <div class="row justify-content-between">
 
-                <div class="col-4">
+                <div class="col-sm-4">
                     <img src="logo.png" />
                 </div>
 
-                <div class="col-4">
+                <div class="col-sm-4;">
                     <div class="text-center text-md-right">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
@@ -70,25 +96,53 @@
    
   
 
-        <div id="gradient1">
-              <nav class="navbar navbar-light bg-light"  id="gradient1">
-               <ul>
+        
+        
+              
+        
+              <nav class="navbar navbar-light bg-light"  id="gradient1"  style="">
+              
+                 <ul>
                         <li><a href="#">students</a></li>
                         <li><a href="#">alumni</a></li>
                         <li><a href="#">parents</a></li>
                         <li><a href="#">faculty</a></li>
                         <li><a href="#">employees</a></li>
                         <li><a href="#">sports</a></li>
-                     </ul>
+                  </ul>
 
-                  <a class="navbar-brand" href="#">Navbar</a>
              </nav>        
-      </div>
+    
+
+    <div class="row" style="margin-top: 40px; padding: 20px;";>
+        <div class="col-md-3" id="kerah">
+                 <img src="img1.jpg" alt="Image not available" style="width:100%">         
+                  <p style="color:#AB3100;font-size:130%; text-align: justify;"><br/>This is the title of a column text</p>
+                  <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+        </div>
+        
+        
+        <div class="col-md-3" id="kerah">
+                 <img src="img1.jpg" alt="Image not available" style="width:100%">         
+                  <p style="color:#AB3100;font-size:130%; text-align: justify;"><br/>This is the title of a column text</p>
+                  <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+        </div>
+        
+        <div class="col-md-3" id="kerah">
+                 <img src="img1.jpg" alt="Image not available" style="width:100%">         
+                  <p style="color:#AB3100;font-size:130%; text-align: justify;"><br/>This is the title of a column text</p>
+                  <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+        </div>
+        
+         <div class="col-md-3" id="kerah">
+                 <img src="img1.jpg" alt="Image not available" style="width:100%">         
+                  <p style="color:#AB3100;font-size:130%; text-align: justify;"><br/>This is the title of a column text</p>
+                  <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+        </div>
+   </div>
 
 
-
-
-        <div style="height: 100vh">
+        <div style="height: 100vh; padding: 10px;">
             <div class="flex-center flex-column">
                 <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
 
@@ -100,7 +154,7 @@
         <!-- /Start your project here-->
 
 
-    
+
  
  
      <div class="jumbotron-fluid">
