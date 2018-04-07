@@ -3,7 +3,7 @@
 
 body
 {
-	background-color: #FFFFFF;
+	background-color:  white;
 	
 }	
 
@@ -155,8 +155,9 @@ li{
 
 #kerah
 {
-      background-color: transparent;
+      background-color: #FFFFFF;
       padding: 20px;
+      border: 1px solid #404040;
 }
  
 #productCell
