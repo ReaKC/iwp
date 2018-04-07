@@ -3,6 +3,9 @@
 
 <head>
 
+   <script type="text/javascript" src="data.json"></script>
+   <script type="text/javascript" src="jv.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta charset="utf-8">
@@ -22,6 +25,9 @@
     
  
 <style>
+
+
+
 
 body
 {
@@ -65,7 +71,7 @@ html
 </style>
 </head>
 
-<body>
+<body onload="load()">
 
 
 
@@ -83,7 +89,7 @@ html
    <div class="secondTopBar">
       <div class="centerContainer">
       
-      
+      <img src="pegas.svg" style="">
         
      </div>
   </div> 
@@ -100,16 +106,20 @@ html
     <div class="container">
         <!-- Start your project here-->
 
+
  
 
-
-    <div class="row" style="margin-top: 40px; padding: 20px;";>
+    <div class="row" style="margin-top: 40px; padding: 20px;" id="products">
+    
+    
+    
         <div class="col-md-4" id="kerah">
                  <img src="img1.jpg" alt="Image not available" style="width:100%">         
                   <p style="color:#AB3100;font-size:130%; text-align: justify;"><br/>This is the title of a column text</p>
-                  <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                 <p> Default cell </p>
         </div>
         
+        <!--
         
         <div class="col-md-4" id="kerah">
                  <img src="img1.jpg" alt="Image not available" style="width:100%">         
@@ -130,9 +140,12 @@ html
         </div>
         
     
-        
+        //-->
         
    </div>
+
+
+
 
 
         <div style="height: 100vh; padding: 10px;">
@@ -273,28 +286,9 @@ html
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     
-    
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <script src="index.js"> </script>    
-    
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCSxbegGop6PtVL7jXeXe_IOEpeiTJJKnc",
-    authDomain: "webdb-bdac0.firebaseapp.com",
-    databaseURL: "https://webdb-bdac0.firebaseio.com",
-    projectId: "webdb-bdac0",
-    storageBucket: "",
-    messagingSenderId: "725378484345"
-  };
-  firebase.initializeApp(config);
-</script>
 
- <script type="text/javascript">
-            
-   getProducts();
-	
-	</script>
+
+
     
 
     
