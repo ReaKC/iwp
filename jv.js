@@ -15,7 +15,15 @@
                              iDiv.id = 'kerah';
                              iDiv.className = 'col-md-4';
                         
-                             iDiv.innerHTML =  mydata[i].name + " " + mydata[i].index;
+                        
+                            var img = document.createElement("img");
+                            img.src = "product"+mydata[i].index+".jpg";
+                            img.classList.add('center');
+                        
+                             
+                             iDiv.appendChild(img);
+                             iDiv.innerHTML +=  mydata[i].name + mydata[i].index;
+                             //iDiv.innerHTML =  mydata[i].name + " " + mydata[i].index;
                            
                              
                              document.getElementById('products').appendChild(iDiv);
