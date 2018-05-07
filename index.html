@@ -3,6 +3,30 @@
 
 <head>
 
+
+<!--trash-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+
+
+
+
+
+
+<!-- for cascade:-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="specialMenu.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
    <script type="text/javascript" src="data.json"></script>
    <script type="text/javascript" src="jv.js"></script>
 
@@ -49,6 +73,9 @@ html
     max-width: 90%;
   }
   
+  
+  
+  
    #gradient1 
    {
      height: 72px;
@@ -59,13 +86,25 @@ html
    }
 }
 
+@media (min-width: 600px)
+{
+  .displaySwitcherOne
+       {
+           display: none;
+       }   
+}          
+
+
 /*for full desktop screens:*/
 @media (min-width: 1400px)
 {
-    @media (min-width: 1500px) {
-  .container {
-    min-width: 1400px;
-  }
+    @media (min-width: 1500px)
+  {
+     .container
+     {
+         min-width: 1400px;
+     }
+     
 }
 }
 </style>
@@ -81,6 +120,42 @@ html
   <div class="topBar">
     <div class="centerContainer">
          
+         
+<!-- Sidebar -->
+<div class="displaySwitcherOne w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal displaySwitcherOne">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<img src="img_car.jpg" alt="Car" style="width:100%" class="displaySwitcherOne">
+
+<div class="w3-container displaySwitcherOne">
+<p>In this example, the sidebar is hidden (style="display:none")</p>
+<p>It is shown when you click on the menu icon in the top left corner.</p>
+<p>When it is opened, it hides all the page content (style.width="100%").</p>
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+         
            <div class="topnav" id="myTopnav">
               <a href="#home" class="active">Home</a>
               <a href="#news">News</a>
@@ -89,6 +164,12 @@ html
                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
      </div>
+     
+
+
+     
+     
+     
   </div>
   
    <div class="secondTopBar" style="">
@@ -116,7 +197,53 @@ html
 
   </div>
 
-<img src="bg1.jpg" style="width: 100%;">
+
+
+
+      
+
+
+
+
+
+
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                     <div class="item active">
+                        <img src="cascadeImages/1.jpg" alt="Los Angeles" style="width:100%">
+                     </div>
+                     <div class="item">
+                        <img src="cascadeImages/2.jpg" alt="Chicago" style="width:100%;">
+                     </div>
+                     <div class="item">
+                        <img src="cascadeImages/3.jpg" alt="New york" style="width:100%;">
+                     </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
+            </div>
+
+
+
+
+
+
+
 
 
     <div class="container">
