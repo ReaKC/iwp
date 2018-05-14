@@ -1,1 +1,1 @@
-data = '[{"name" : "Product one","index":"1"},{"name" : "Javed"},{"name" : "Arun"},{"name" : "Sunil"},{"name" : "Rahul"},{"name" : "Anita"}]';
+data = '[{"name" : "Product one","index":"1"},{"name" : "Product two","index":"2"},{"name" : "Product three","index":"3"},{"name" : "Product four","index":"4"}]';
