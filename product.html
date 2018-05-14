@@ -127,15 +127,47 @@ html
     <div class="centerContainer">
          
          
+<!-- Sidebar -->
+<div class="displaySwitcherOne w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
 
+<!-- Page Content -->
+<div class="w3-teal displaySwitcherOne">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<img src="img_car.jpg" alt="Car" style="width:100%" class="displaySwitcherOne">
+
+<div class="w3-container displaySwitcherOne">
+<p>In this example, the sidebar is hidden (style="display:none")</p>
+<p>It is shown when you click on the menu icon in the top left corner.</p>
+<p>When it is opened, it hides all the page content (style.width="100%").</p>
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
          
            <div class="topnav" id="myTopnav">
               <a href="index.html" >Home</a>
-              <a href="#news" class="active">News</a>
-               <a href="contact.html">Contact</a>
+              <a href="news.html">News</a>
+               <a href="#contact" class="active">Contact</a>
                <a href="about.html">About</a>
-               
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
      </div>
      
@@ -153,15 +185,12 @@ html
              <div class="col-md-4" id="">
                  <img src="icon.png" style="width: 150px;" >                  
              </div>
-             
-              <div class="col-md-8" id="" style="text-align: left;">
-                 <p style="font: italic bold 12px/30px Georgia, serif; font-size: 200%; color: #DCDCC8"> Get news from the flying word.</p>                 
-             </div>
           
+            <div class="col-md-8" id="" style="text-align: left;">
+                 <p style="font: italic bold 12px/30px Georgia, serif; font-size: 200%;  color: #DCDCC8"> Share your ideas with us</p>                 
+             </div>
              
           </div>
-          
-          
      
   </div> 
   
@@ -180,15 +209,14 @@ html
 
 
 
+      
 
 
 
 
 
 
-     
-
-
+  
 
 
 
@@ -199,67 +227,71 @@ html
         <!-- Start your project here-->
 
 
+ 
 
 
+    
+        
+<div style="height: 100vh; padding: 10px; background-color: #D6D6D6; border-radius: 15px;" >
+     <div class="flex-center flex-column" style="background-color: transparent;">
+     
+                <h2 class="animated fadeIn mb-4" >Compliments and complaints.</h2>
+       			<h3 class="animated fadeIn mb-4" >For any sugestion or problem, please send us your thoughts and we are going to deal with that.</h3>
+       			
+                <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
 
-<div id="" style="; padding: 10px; background-color: #D6D6D6; border-radius: 15px;" >
-<div class="flex-center flex-column" style="">
-                <h1 class="animated fadeIn mb-4">Drones can locate downed lines and repair them more easily than humans.</h1>
-
-                   
-
-            
-                    <p class="animated fadeIn text-muted "><a href="https://www.popularmechanics.com/author/16191/avery-thompson/" style="color: green; text-align: left;">by Avery Thompson</a> <span style="color:gre;"> Mar 5, 2018</span></p>
-                    
-                    <p class="animated fadeIn text-muted"><a href=" https://www.popularmechanics.com/flight/drones/a19094490/drones-power-puerto-rico/" style="color: green; text-align: left;">source: popularmechanics.com</a></p> 
+                <p class="animated fadeIn text-muted">Eigendrones Team</p>
                 
-                   
+                <br><br><br>
                 
-                      <p class="center" style=" font-family: Crimson; font-size: 140%;  width: 70%; "> &nbsp&nbsp&nbsp&nbsp  It’s been over 160 days since Puerto Rico lost power during Hurricane Maria, and many parts of the island are still left in the dark. By far longest blackout in U.S. history, many people are developing creative solutions to fix it, and Duke Energy, a North Carolina-based energy company, is using commercial drones to rebuild the island’s energy infrastructure.</p>
-                
-				<br>
-				<img src="a1.jpg" style="width=630; height=405;"></img>
-      			<br>
-      				
-                 <p class="center" style=" font-family: Crimson; font-size: 140%;  width: 70%; "> &nbsp&nbsp&nbsp&nbsp Since mid-January, Duke Energy with its 200 volunteers have been clearing fallen power lines and constructing new lines across the island. Repairing fallen power lines is not easy for humans to do, especially in Puerto Rico. First workers have to locate downed lines, which can be tough among debris, fallen trees, and undergrowth. In Puerto Rico, that can also involve hiking through forests, over mountains, and through endless difficult terrain.
-<br><br>
-&nbsp&nbsp&nbsp&nbsp Once workers find downed lines they have to string them across the utility poles, which involves attaching weights to those lines and shooting them hundreds of feet in the air. This, also, is not an easy task. Fortunately, the entire process becomes much easier when using drones.
-<br>
-&nbsp&nbsp&nbsp&nbsp For the past few months, workers have been using five AceCore's Zoe quadcopters to locate fallen power lines across Puerto Rico, and to help repair those lines once they’re found. These Zoe drones—which can carry 26 lbs, fly for 40 minutes, and cost around $15,000 each—can spot fallen lines and thread those lines through the poles, saving volunteers lots of time and money.
-</p>
-
-<br>
-   <iframe width="630" height="405" src="https://www.youtube.com/embed/rYb7LH919DU"></iframe>
-<br>
-
-
- <p class="center" style=" font-family: Crimson; font-size: 140%;  width: 70%; ">
-<br>
-&nbsp&nbsp&nbsp&nbsp For the next several months, Duke Energy volunteers—and their drones—will continue working on getting Puerto Rico's infrastructure up and running. That infrastructure is going to be crucial once summer and hotter temperatures arrive. Unfortunately, it’s unlikely they’ll repair all of Puerto Rico’s electrical grid, even with their handy drone sidekicks.</p>
-
-
-
-
+   
+<form action="phpFile.php">
+             Name: 
+  <input type="text" name="name" value="" placeholder="name">
+  
+  <br>
+  
+ Phone number: 
+  <input type="text" name="phone" value="" placeholder="xxxx xxx xxx">
+  
+  <br>
+  
+  e-mail: 
+  <input type="email" name="phone" value="" placeholder="xxxx@yyyy.zz"> 
+  
+  <br><br>
+  
+  
+  <input type="submit" value="Submit">
+</form> 
              
 
-               
-         </div>
+                
+                
+            
+  
+  
+     </div>
 </div>
+        
+                     
+            
+
+
+
+
+ 
+ 
 
 
 
    
-        <!-- /Start your project here-->
 
-
-
- 
- 
 
     </div>
     <!-- container -->
 
- <br>
+<br>
 
 
  <footer class="page-footer font-small  pt-4 mt-4" style="background-color: black;">
