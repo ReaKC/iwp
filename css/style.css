@@ -1,14 +1,17 @@
 /* Your custom styles */
 
 
+
 body
 {
+    
 	background-color:  #363636;
 	background-color: rgba(60,60,60,1);
 }	
 
 .header 
 {
+    
     position: fixed;
     width: 100%;
     
@@ -41,7 +44,7 @@ body
 
   
   z-index: 99;
-  height: 125px;
+  height: 100px;
 
  
 }    
@@ -67,6 +70,8 @@ body
   z-index: 1;
   width: 1000px;
 }
+
+
 
 .centerContainer
 {
