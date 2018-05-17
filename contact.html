@@ -215,14 +215,6 @@ function w3_close() {
 
 
 
-
-  
-
-
-
-
-
-
     <div class="container">
         <!-- Start your project here-->
 
@@ -232,10 +224,10 @@ function w3_close() {
 
     
         
-<div style="height: 100vh; padding: 10px; background-color: #D6D6D6; border-radius: 15px;" >
+<div style="height: 110vh; padding: 10px; background-color: #D6D6D6; border-radius: 15px;" >
      <div class="flex-center flex-column" style="background-color: transparent;">
      
-                <h2 class="animated fadeIn mb-4" >Compliments and complaints.</h2>
+                <h2 class="animated fadeIn mb-4" ><u>Compliments and complaints.</u></h2>
        			<h3 class="animated fadeIn mb-4" >For any sugestion or problem, please send us your thoughts and we are going to deal with that.</h3>
        			
                 <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
@@ -244,27 +236,52 @@ function w3_close() {
                 
                 <br><br><br>
                 
+  
+  
+  
    
-<form action="phpFile.php">
-             Name: 
-  <input type="text" name="name" value="" placeholder="name">
+
+<form action="phpFile.php" id="feedback">
+
+
+  Type of feed-back: <br>
   
-  <br>
-  
- Phone number: 
-  <input type="text" name="phone" value="" placeholder="xxxx xxx xxx">
-  
-  <br>
-  
-  e-mail: 
-  <input type="email" name="phone" value="" placeholder="xxxx@yyyy.zz"> 
+  <select name="type" form="feedback" style="width: 200px;">
+     <option value="complaint"> complaint </option>
+     <option value="improvement"> improvement </option>
+     <option value="sugestion"> sugestion </option>
+  </select>
+      
+      <br><br>
+
+             Name:  <br>
+  <input type="text" name="name" value="" placeholder="name" style="width: 200px;" >
   
   <br><br>
   
+
+Phone number: 
+ <br>
+  <input type="text" name="phone" value="" placeholder="xxxx xxx xxx" style="width: 200px;">
   
+  <br><br>
+  
+  e-mail: <br>
+  <input type="email" name="email" value="" placeholder="xxxx@yyyy.zz" style="width: 200px;"> 
+  
+  <br><br> 
+  
+   message:
+<br>
+ <textarea name="message" placeholder="Hey guys..." form="feedback" style="width: 600px; height: 200px" class="center"></textarea>
+  
+  
+    <br><br>
   <input type="submit" value="Submit">
 </form> 
-             
+
+
+         
 
                 
                 
