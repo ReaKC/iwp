@@ -37,14 +37,21 @@
                               //a.onclick= changeproductIndex(mydata[i].index)
                              iDiv.appendChild(a);
                              a.appendChild(img);
+                             iDiv.innerHTML += "Model: ";
                              iDiv.innerHTML +=  mydata[i].name;
-                             //iDiv.innerHTML =  mydata[i].name + " " + mydata[i].index;
-                           
+                             
+                            
                              
                              document.getElementById('products').appendChild(iDiv);
                      }
                  }
 
+
+function changeCurrentProduct()
+{
+    alert("muhahahha"); 
+    print("lalalal");
+}    
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
