@@ -1,14 +1,15 @@
+
+<?php
+
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-
-
-
-
-
-
 
 
 
@@ -112,6 +113,14 @@ html
 
 <body onload="load()">
 
+
+<?php
+
+  $_SESSION["index"] = 0
+
+?>
+
+
 <a href=”#” class=”back-to-top” style=”display: inline;”>
  
 <i class=”fa fa-arrow-circle-up”></i>
@@ -151,7 +160,7 @@ html
           <div class="row align-items-center" style="height: 100%; width: 80%; margin: 0 auto;">
           
              <div class="col-md-4" id="">
-                 <img src="icon.png" style="width: 150px;" >                  
+                 <img src="icon.png" style="width: 100px;" >                  
              </div>
              
               <div class="col-md-8" id="" style="text-align: left;">

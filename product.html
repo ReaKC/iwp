@@ -1,14 +1,16 @@
+
+
+<?php
+
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-
-
-
-
-
-
 
 
 
@@ -249,8 +251,8 @@ function w3_close() {
            
           <script>  
           
-               document.getElementById("individualProductName").src = "product"+productIndex+".jpg"
-               productIndex=0;
+               document.getElementById("individualProductName").src = "product"+<?php> echo $_SESSION["index"] </?>+".jpg"
+               
           </script>
         
         
