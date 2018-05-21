@@ -21,7 +21,7 @@
        img.style.width = "300px";
                         
                         var a = document.createElement("a");
-                              a.href = "product.php?id="+mydata[i].index;
+                              a.href = "product.html?id="+mydata[i].index;
                               
                              iDiv.appendChild(a);
                              a.appendChild(img);
