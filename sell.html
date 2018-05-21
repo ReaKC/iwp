@@ -243,23 +243,35 @@ function w3_close() {
 
 <form action="phpFile.php" id="feedback">
 <fieldset>
-<legend>  Sugestion or complaint information: </legend>
+<legend>  Information about the item you are posting: </legend>
 
-  Type of feed-back: <br>
+  Aerial platform: <br>
   
   <select name="type" form="feedback" style="width: 200px;">
-     <option value="complaint"> complaint </option>
-     <option value="improvement"> improvement </option>
-     <option value="sugestion"> sugestion </option>
+     <option value="multiRotor"> Multi Rotor </option>
+     <option value="fixedWing"> Fixed Wing </option>
+     <option value="singleRotor"> Single Rotor </option>
   </select>
+      
+    
+      <br><br>
+      Model name: <br>
+  <input type="text" name="modelName" value="" placeholder="model number code" style="width: 200px;">
+      
       
       <br><br>
 
-             Name:  <br>
-  <input type="text" name="name" value="" placeholder="name" style="width: 200px;" >
+             Price:  <br>
+  <input type="text" name="price" value="" placeholder="enter price" style="width: 200px;" >
   
-  <br><br>
+  <br><br>  
   
+  
+Your name:
+ <br>
+  <input type="text" name="userName" value="" placeholder="full name" style="width: 200px;">
+  
+  <br><br> 
 
 Phone number: 
  <br>
@@ -272,14 +284,26 @@ Phone number:
   
   <br><br> 
   
-   message:
-<br>
- <textarea name="message" placeholder="Hey guys..." form="feedback" style="width: 600px; height: 200px" class="center"></textarea>
   
-  
-    <br><br>
+      Image:
+  <input type="file" accepts="image/*">
+<script>
+var input = document.querySelector("input[type=file]");
+input.addEventListener("change", function() {
+  var file = this.files[0];
+  var data = new FormData();
+  data.append("file", file);
+  fetch("/path/to/server", {method:"POST", body:data})
+  .then(response => response.ok)
+  .then(res => console.log(res))
+})
+</script>
+
+<br><br>
+
   <input type="submit" value="Submit">
-  </fieldset>
+
+
 </form> 
 
 
