@@ -180,6 +180,8 @@ function w3_close() {
      
   </div>
   
+   
+  
    <div class="secondTopBar" style="">
        
           <div class="row align-items-center" style="height: 100%; width: 80%; margin: 0 auto;">
@@ -234,7 +236,7 @@ function w3_close() {
 
     
         
-<div style="height: 100vh; padding: 10px; background-color: #D6D6D6; border-radius: 15px;" >
+<div style=" padding: 10px; background-color: #D6D6D6; border-radius: 15px;" >
      <div class="flex-center flex-column" style="background-color: transparent;">
      
                 <h2 class="animated fadeIn mb-4" >Displaying info about the item</h2>
@@ -247,11 +249,24 @@ function w3_close() {
 
     
         <div class="col-md-12" id="kerah" style="">
-           <img id="individualProductName" src="" alt="Image not available" style="width:100%">
+           <img id="individualProductName" src="" alt="Image not available" style="width: 450px;">
            
           <script>  
+		  
+		      
+				 function getId()
+				 {
+					var url = window.location.href;
+					var lastChar = url.substring(url.length - 1, url.length);
+					
+					return lastChar;
+				 }
+				 
+				 getId();
+				
+			    
           
-               document.getElementById("individualProductName").src = "product"+<?php> echo $_SESSION["index"] </?>+".jpg"
+               document.getElementById("individualProductName").src = "product"+getId()+".jpg";
                
           </script>
         
@@ -259,7 +274,7 @@ function w3_close() {
                    
                   <p style="color:#AB3100;font-size:130%; text-align: justify;"><br/>This is the title of a column text</p>
                   <p> Default cell </p>
-              </a>     
+                  
         </div>
         
         
