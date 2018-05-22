@@ -27,7 +27,7 @@
                              a.appendChild(img);
                              iDiv.innerHTML += "Model: ";
                              iDiv.innerHTML +=  mydata[i].name;
-                             
+                             iDiv.align = "center";
                             
                              
                              document.getElementById('products').appendChild(iDiv);
